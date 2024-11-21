@@ -1,0 +1,62 @@
+footer {
+    background-color: #F58D44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+    min-height: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .instagram-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+footer .instagram-link img:hover {
+    transform: scale(1.2);
+}
+
+/* Botão de voltar ao topo */
+footer .back-to-top img{
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+footer .back-to-top img:hover {
+    transform: scale(1.2);
+}
+
+/* Número do Whatsapp */
+footer .numero-whatsapp {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .numero-whatsapp:hover {
+    color: #25D366;
+    transform: scale(1.1);
+}

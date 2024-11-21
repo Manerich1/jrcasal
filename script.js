@@ -1,8 +1,18 @@
 // Função para abrir o modal
 function openModal(imgSrc, title, description) {
-    document.getElementById("modal").style.display = "block";
-    document.getElementById("modal-img").src = "images/" + imgSrc;
-    document.getElementById("caption").innerHTML = `<strong>${title}</strong><br>${description}`;
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modal-img");
+    var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = "images/" + imgSrc;
+    captionText.innerHTML = "<h2>" + title + "</h2><p>" + description + "</p>";
+
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    };
 }
 
 // Função para fechar o modal

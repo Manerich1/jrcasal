@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Casal Decorações</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -24,56 +24,61 @@
         </nav>
     </header>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h2>Bem-vindo à JR Casal Decorações</h2>
-        <p>Especialistas em pisos vinílicos, rodapés e portas para transformar seu espaço com qualidade e estilo.</p>
-    </section>
+    <main>
+            <!-- Seção Sobre -->
+            <section id="sobre">
+                <h2>Bem-vindo à JR Casal Decorações</h2>
+                <p>Especialistas em pisos vinílicos, rodapés e portas para transformar seu espaço com qualidade e estilo.</p>
+            </section>
+        
+            <!-- Seção Produtos -->
+            <section id="produtos">
+                <h2>Nossos Produtos</h2>
+                <div class="galeria">
+                    <!-- Piso Vinílico -->
+                    <div class="produto" onclick="openModal('piso.jpg', 'Pisos Vinílicos', 'Durabilidade e elegância para seu ambiente.')">
+                        <img src="images/piso.jpg" alt="Piso Vinílico">
+                        <h3>Pisos Vinílicos</h3>
+                        <p>Durabilidade e elegância para seu ambiente.</p>
+                    </div>
+                    <!-- Rodapé -->
+                    <div class="produto" onclick="openModal('rodape.jpg', 'Rodapés', 'Detalhes que valorizam seu espaço.')">
+                        <img src="images/rodape.jpg" alt="Rodapé">
+                        <h3>Rodapés</h3>
+                        <p>Detalhes que valorizam seu espaço.</p>
+                    </div>
+                    <!-- Porta -->
+                    <div class="produto" onclick="openModal('porta.jpg', 'Portas', 'Qualidade e estilo em cada detalhe.')">
+                        <img src="images/porta.jpg" alt="Porta">
+                        <h3>Portas</h3>
+                        <p>Qualidade e estilo em cada detalhe.</p>
+                    </div>
+                </div>        
+            </section>
 
-    <!-- Seção Produtos -->
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="galeria">
-            <!-- Piso Vinílico -->
-            <div class="produto" onclick="openModal('piso.jpg', 'Pisos Vinílicos', 'Durabilidade e elegância para seu ambiente.')">
-                <img src="images/piso.jpg" alt="Piso Vinílico">
-                <h3>Pisos Vinílicos</h3>
-                <p>Durabilidade e elegância para seu ambiente.</p>
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modal-img">
+                <div id="caption"></div>
             </div>
-            <!-- Rodapé -->
-            <div class="produto" onclick="openModal('rodape.jpg', 'Rodapés', 'Detalhes que valorizam seu espaço.')">
-                <img src="images/rodape.jpg" alt="Rodapé">
-                <h3>Rodapés</h3>
-                <p>Detalhes que valorizam seu espaço.</p>
-            </div>
-            <!-- Porta -->
-            <div class="produto" onclick="openModal('porta.jpg', 'Portas', 'Qualidade e estilo em cada detalhe.')">
-                <img src="images/porta.jpg" alt="Porta">
-                <h3>Portas</h3>
-                <p>Qualidade e estilo em cada detalhe.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <div id="caption"></div>
-    </div>
-
-    <!-- Mapa de Localização da Empresa -->
-    <section id="localizacao">
-        <h2>Encontre-nos</h2>
-        <p>Visite-nos em nossa loja física para conferir nossos pisos, rodapés e portas.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.796884297024!2d-49.09705029005859!3d-26.494483976802588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de95c990240a7f%3A0x73971dd19b7e9593!2zSnIgQ2FzYWwgRGVjb3Jhw6fDtWVz!5e0!3m2!1spt-BR!2sbr!4v1731511231559!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+        
+            <!-- Mapa de Localização da Empresa -->
+            <section id="localizacao">
+                <h2>Encontre-nos</h2>
+                <p>Visite-nos em nossa loja física para conferir nossos pisos, rodapés e portas.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.796884297024!2d-49.09705029005859!3d-26.494483976802588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de95c990240a7f%3A0x73971dd19b7e9593!2zSnIgQ2FzYWwgRGVjb3Jhw6fDtWVz!5e0!3m2!1spt-BR!2sbr!4v1731511231559!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+    </main>
 
     <!-- Rodapé -->
     <footer id="contato">
         <div class="footer-content">
             <p>&copy; 2024 JR Casal Decorações - Todos os direitos reservados</p>
-            <p>Telefone: José (47) 99216-5038 | Meri (47) 99203-8300</p>
+            <p>
+                Telefone: José <a href="https://wa.me/5547992165038?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20produtos%20da%20JR%20Casal%20Decorações." target="_blank" class="numero-whatsapp">(47) 99216-5038</a> | 
+                Meri <a href="https://wa.me/5547992038300?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20produtos%20da%20JR%20Casal%20Decorações." target="_blank" class="numero-whatsapp">(47) 99203-8300</a>
+            </p>
             <p>Email: josed.manerich@hotmail.com</p>
             <div class="social-links">
                 <!-- Botão do Instagram -->

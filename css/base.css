@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    background-color: #FFF;
+    padding-top: 75px;
+}
+
+/* Botão do Whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+.whatsapp-button span {
+    margin-left: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* Seção Sobre */
+    #sobre {
+    padding: 100px 0;
+    }
+    
+    /* Seção Produtos */
+    .galeria {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .produto {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Botão flutuante do Whatsapp */
+    .whatsapp-button {
+        padding: 8px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .whatsapp-button img {
+        width: 35px;
+        height: 35px;
+    }
+    .whatsapp-button span {
+        display: none;
+    }
+}
